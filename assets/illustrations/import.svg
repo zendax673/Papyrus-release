@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Import flow illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3ecdf"></stop>
+      <stop offset="1" stop-color="#ece2cf"></stop>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"></stop>
+      <stop offset="1" stop-color="#faf6ef"></stop>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1a1814" flood-opacity="0.10"></feDropShadow>
+    </filter>
+  </defs>
+  <rect width="720" height="520" rx="28" fill="url(#bg)"></rect>
+
+  
+  <g>
+    <rect x="42" y="76" width="200" height="64" rx="10" fill="url(#card)" stroke="#e3dccb"></rect>
+    <rect x="58" y="92" width="32" height="32" rx="6" fill="#fde2e2"></rect>
+    <text x="74" y="113" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="11" font-weight="700" fill="#c0392b">PDF</text>
+    <text x="106" y="106" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">attention.pdf</text>
+    <text x="106" y="124" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">Vaswani et al. · 12.3 MB</text>
+  </g>
+
+  <g>
+    <rect x="42" y="156" width="200" height="64" rx="10" fill="url(#card)" stroke="#e3dccb"></rect>
+    <rect x="58" y="172" width="32" height="32" rx="6" fill="#e2ecfd"></rect>
+    <text x="74" y="193" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="10" font-weight="700" fill="#2860c2">DOI</text>
+    <text x="106" y="186" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="11.5" letter-spacing="-0.3" fill="#1a1814">10.1038/nature14539</text>
+    <text x="106" y="204" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">paste from clipboard</text>
+  </g>
+
+  <g>
+    <rect x="42" y="236" width="200" height="64" rx="10" fill="url(#card)" stroke="#e3dccb"></rect>
+    <rect x="58" y="252" width="32" height="32" rx="6" fill="#e9e2fc"></rect>
+    <text x="74" y="273" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="10" font-weight="700" fill="#7b61d1">arXiv</text>
+    <text x="106" y="266" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="11.5" letter-spacing="-0.3" fill="#1a1814">2401.04088</text>
+    <text x="106" y="284" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">Mixtral of Experts</text>
+  </g>
+
+  <g>
+    <rect x="42" y="316" width="200" height="64" rx="10" fill="url(#card)" stroke="#e3dccb"></rect>
+    <rect x="58" y="332" width="32" height="32" rx="6" fill="#fff4d9"></rect>
+    <text x="74" y="353" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9" font-weight="700" fill="#a87715">BibTeX</text>
+    <text x="106" y="346" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">refs.bib</text>
+    <text x="106" y="364" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">412 entries · Zotero</text>
+  </g>
+
+  <g>
+    <rect x="42" y="396" width="200" height="64" rx="10" fill="url(#card)" stroke="#e3dccb"></rect>
+    <rect x="58" y="412" width="32" height="32" rx="6" fill="#dff4e1"></rect>
+    <text x="74" y="433" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="11" font-weight="700" fill="#2da64f">FLDR</text>
+    <text x="106" y="426" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">~/Datasheets</text>
+    <text x="106" y="444" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">recursive · 286 PDFs</text>
+  </g>
+
+  
+  <g stroke="#c8922a" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M242 108 C 320 108, 360 250, 440 256"></path>
+    <path d="M242 188 C 320 188, 360 252, 440 258"></path>
+    <path d="M242 268 C 320 268, 360 260, 440 260"></path>
+    <path d="M242 348 C 320 348, 360 268, 440 262"></path>
+    <path d="M242 428 C 320 428, 360 280, 440 264"></path>
+  </g>
+  <g fill="#c8922a">
+    <circle cx="440" cy="256" r="3"></circle>
+    <circle cx="440" cy="258" r="3"></circle>
+    <circle cx="440" cy="260" r="3"></circle>
+    <circle cx="440" cy="262" r="3"></circle>
+    <circle cx="440" cy="264" r="3"></circle>
+  </g>
+
+  
+  <g>
+    <rect x="448" y="120" width="240" height="280" rx="14" fill="url(#card)" stroke="#e3dccb"></rect>
+    <rect x="448" y="120" width="240" height="40" rx="14" fill="#1a1814"></rect>
+    <rect x="448" y="148" width="240" height="12" fill="#1a1814"></rect>
+    <text x="468" y="146" font-family="-apple-system,Helvetica" font-size="12" font-weight="600" fill="#f7eccb">Enriched record</text>
+    <circle cx="664" cy="140" r="4" fill="#c8922a"></circle>
+
+    <text x="468" y="186" font-family="Georgia,serif" font-size="14" font-weight="600" fill="#1a1814">Attention Is All You Need</text>
+    <text x="468" y="204" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">Vaswani et al. · NeurIPS 2017</text>
+
+    <line x1="468" y1="218" x2="668" y2="218" stroke="#efe9da"></line>
+
+    <text x="468" y="238" font-family="-apple-system,Helvetica" font-size="9" letter-spacing="1.2" fill="#8c8576">DOI</text>
+    <text x="500" y="238" font-family="ui-monospace,Menlo" font-size="11" fill="#3a342a">10.5555/3295222.3295349</text>
+
+    <text x="468" y="258" font-family="-apple-system,Helvetica" font-size="9" letter-spacing="1.2" fill="#8c8576">VENUE</text>
+    <text x="508" y="258" font-family="-apple-system,Helvetica" font-size="11" fill="#3a342a">NeurIPS · Crossref</text>
+    <circle cx="666" cy="255" r="3" fill="#2da64f"></circle>
+
+    <text x="468" y="278" font-family="-apple-system,Helvetica" font-size="9" letter-spacing="1.2" fill="#8c8576">CITED</text>
+    <text x="500" y="278" font-family="-apple-system,Helvetica" font-size="11" fill="#3a342a">92,431 · OpenAlex</text>
+    <circle cx="666" cy="275" r="3" fill="#2da64f"></circle>
+
+    <text x="468" y="298" font-family="-apple-system,Helvetica" font-size="9" letter-spacing="1.2" fill="#8c8576">XMP</text>
+    <text x="500" y="298" font-family="-apple-system,Helvetica" font-size="11" fill="#3a342a">embedded · matched</text>
+    <circle cx="666" cy="295" r="3" fill="#2da64f"></circle>
+
+    <line x1="468" y1="312" x2="668" y2="312" stroke="#efe9da"></line>
+
+    <text x="468" y="332" font-family="-apple-system,Helvetica" font-size="9" letter-spacing="1.2" fill="#8c8576">TAGS</text>
+    <rect x="468" y="340" width="64" height="20" rx="4" fill="#f7eccb"></rect>
+    <text x="500" y="354" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="10" fill="#a87715">transformers</text>
+    <rect x="538" y="340" width="46" height="20" rx="4" fill="#e9e2fc"></rect>
+    <text x="561" y="354" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="10" fill="#7b61d1">attention</text>
+    <rect x="590" y="340" width="60" height="20" rx="4" fill="#dff4e1"></rect>
+    <text x="620" y="354" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="10" fill="#2da64f">core read</text>
+
+    <text x="468" y="384" font-family="-apple-system,Helvetica" font-size="11" fill="#3a342a">✓ deduplicated</text>
+  </g>
+
+  
+  <g>
+    <rect x="296" y="36" width="184" height="28" rx="14" fill="#1a1814"></rect>
+    <circle cx="312" cy="50" r="3" fill="#c8922a"></circle>
+    <text x="324" y="55" font-family="-apple-system,Helvetica" font-size="11" font-weight="500" fill="#f7eccb">Crossref · OpenAlex · arXiv · XMP</text>
+  </g>
+</svg>

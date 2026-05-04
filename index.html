@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Papyrus Papers — A Native macOS Research Workspace</title>
+  <meta name="description" content="A local-first macOS workspace that connects literature, technical documents, reading notes, citations, and your next decision.">
+  <meta name="theme-color" content="#faf6ef">
+  <meta property="og:title" content="Papyrus Papers — Research, connected.">
+  <meta property="og:description" content="One native Mac app instead of a folder, a browser tab, a PDF reader, a knowledge base, and a reference manager.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<script>
+  // Apply theme before render to avoid flash
+  (function(){
+    var t = localStorage.getItem('pp-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+
+<!-- ============ Nav ============ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="./index.html" class="nav__brand">
+      <img src="assets/icon.svg" alt="">
+      Papyrus Papers
+    </a>
+    <ul class="nav__links">
+      <li class="hide-mobile"><a href="#features">Features</a></li>
+      <li class="hide-mobile"><a href="#workflow">Workflow</a></li>
+      <li class="hide-mobile"><a href="support.html">Support</a></li>
+      <li class="hide-mobile"><a href="privacy.html">Privacy</a></li>
+      <li><a href="download.html" class="nav__download">Download</a></li>
+      <li>
+        <button class="nav__theme" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      <li class="nav__hamburger-li">
+        <button class="nav__hamburger" id="navHamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMobilePanel">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="nav__mobile-panel" id="navMobilePanel" hidden></div>
+</nav>
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="hero__text">
+    <span class="eyebrow hero-a1">Native macOS Research Workspace</span>
+    <h1 class="display hero__title hero-a2">Research,<br><em>connected.</em></h1>
+    <p class="hero__sub hero-a3">A local-first macOS workspace that connects literature, technical documents, reading notes, citations, and your next decision.</p>
+    <p class="hero__sub-tight hero-a3">One native Mac app instead of a folder, a browser tab, a PDF reader, a knowledge base, and a reference manager.</p>
+    <div class="hero__actions hero-a4">
+      <a href="download.html" class="app-store-badge" aria-label="Download Papyrus Papers on the Mac App Store">
+        <img class="app-store-badge__img app-store-badge__img--light" src="assets/app-store-badge-black.svg" alt="">
+        <img class="app-store-badge__img app-store-badge__img--dark" src="assets/app-store-badge-white.svg" alt="" aria-hidden="true">
+      </a>
+      <a href="https://github.com/zendax673/papyrus-release" class="btn btn--outline" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.1.82-.26.82-.58v-2.15c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.33-1.76c-1.09-.74.08-.73.08-.73a2.52 2.52 0 011.84 1.24 2.56 2.56 0 003.5 1 2.56 2.56 0 01.76-1.6c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 011.24-3.22 4.3 4.3 0 01.12-3.18s1-.32 3.3 1.23a11.38 11.38 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23a4.3 4.3 0 01.12 3.18 4.64 4.64 0 011.24 3.22c0 4.61-2.8 5.63-5.48 5.92a2.87 2.87 0 01.82 2.23v3.29c0 .32.21.69.82.58A12 12 0 0012 .3"/></svg>
+        View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <figure class="hero__shot hero-a5">
+    <img class="screenshot screenshot--light" src="assets/app-captures/library-window-light.png" alt="Papyrus Papers library window — sidebar with collections, tags, projects, and smart collections; the paper list; and a detail panel with metadata, abstract, and notes">
+    <img class="screenshot screenshot--dark" src="assets/app-captures/library-window-dark.png" alt="" aria-hidden="true">
+  </figure>
+</section>
+
+<!-- ============ Hero callouts strip ============ -->
+<section class="callouts">
+  <div class="callouts__inner">
+    <div class="callout">
+      <span class="callout__num">01</span>
+      <h3 class="callout__label">Smart collections</h3>
+      <p class="callout__desc">Recent High-Impact, Conference Papers, Unread with PDF — your sidebar is a working set, not a folder tree.</p>
+    </div>
+    <div class="callout">
+      <span class="callout__num">02</span>
+      <h3 class="callout__label">Citation-grade metadata</h3>
+      <p class="callout__desc">DOI, venue, citation key, and counts — joined from Crossref, arXiv, and Semantic Scholar.</p>
+    </div>
+    <div class="callout">
+      <span class="callout__num">03</span>
+      <h3 class="callout__label">Tags &amp; reading state</h3>
+      <p class="callout__desc">Color-coded tags double as filters; reading state and ratings travel with the paper.</p>
+    </div>
+    <div class="callout">
+      <span class="callout__num">04</span>
+      <h3 class="callout__label">Markdown notes, in-context</h3>
+      <p class="callout__desc">Side-by-side notes with LaTeX math, tables, and code — saved as plain Markdown next to the paper.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Pillars ============ -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Design principles</span>
+      <h2 class="section-title">Built to fit your<br><em>research, not own it.</em></h2>
+      <p class="section-desc">Most research tools want to take over your workflow. Papyrus Papers is designed to slot into it — and stay out of the way.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar reveal">
+        <div class="pillar__icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Native macOS, not a web wrapper</h3>
+        <p>Built entirely on SwiftUI, SwiftData, and PDFKit. No Electron, no embedded Chromium. Windows, keyboard shortcuts, drag-and-drop, and Settings behave like a real Mac app.</p>
+      </div>
+      <div class="pillar reveal reveal-d1">
+        <div class="pillar__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>Local-first, always</h3>
+        <p>Your library, notes, PDFs, and indexes live on your Mac. No Papyrus account required. Network requests only happen when you explicitly use metadata lookup or WebDAV sync.</p>
+      </div>
+      <div class="pillar reveal reveal-d2">
+        <div class="pillar__icon">
+          <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Open formats, your data</h3>
+        <p>BibTeX, RIS, Markdown, project bundles. Copy Into Library or Keep PDFs In Place. Files stay portable, the workflow stays yours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Features ============ -->
+<section id="features" class="section section--cream">
+  <div class="container">
+    <!-- Feature 1 -->
+    <div class="feature-row reveal">
+      <div class="feature-content">
+        <span class="section-eyebrow">Import once</span>
+        <h2 class="section-title">Every format,<br><em>one surface.</em></h2>
+        <p class="section-desc">Drop a PDF. Paste a DOI. Drag a folder. Papyrus Papers enriches metadata automatically so you can start reading instead of fixing records.</p>
+        <div class="feature-bullets">
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>PDFs, DOIs, arXiv IDs, BibTeX, and RIS through the same dialog</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Recursive folder import preserving structure</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Joint enrichment from Crossref, OpenAlex, embedded XMP metadata, and arXiv-ID extraction from PDFs</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Per-field provenance and a conflict picker when sources disagree</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Zotero / Better-BibTeX import — keywords become tags, groups become folders</p></div>
+        </div>
+      </div>
+      <div class="feature-image reveal reveal-d2">
+        <img src="assets/illustrations/import.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <!-- Feature 2 -->
+    <div class="feature-row feature-row--rev reveal">
+      <div class="feature-content">
+        <span class="section-eyebrow">Read &amp; think</span>
+        <h2 class="section-title">PDF on the left,<br><em>your mind on the right.</em></h2>
+        <p class="section-desc">A native PDF reader paired with Markdown notes that understand LaTeX. Reading and writing happen side by side — not in two apps.</p>
+        <div class="feature-bullets">
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Native PDFKit reader with annotations, bookmarks, and highlights</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Markdown notes with LaTeX math and code, next to the page</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Full-text search across the entire library</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Reading queue and projects keep work-in-progress visible across sessions</p></div>
+        </div>
+      </div>
+      <div class="feature-image reveal reveal-d2">
+        <img class="screenshot screenshot--light" src="assets/app-captures/reader-window-light.png" alt="Papyrus Papers reader window — a PDF on the left with highlights, and Markdown notes on the right with math, tables, and code">
+        <img class="screenshot screenshot--dark" src="assets/app-captures/reader-window-dark.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream-mid">
+  <div class="container">
+    <!-- Feature 3 -->
+    <div class="feature-row reveal">
+      <div class="feature-content">
+        <span class="section-eyebrow">Decide what's next</span>
+        <h2 class="section-title">A library becomes<br><em>a working set.</em></h2>
+        <p class="section-desc">Smart Collections, the reading queue, and full-text search turn a pile of PDFs into a queue you can act on.</p>
+        <div class="feature-bullets">
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Build your own Smart Collections from any combination of tags, journals, year ranges, BibTeX type, favorites, and PDF status</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Reading queue keeps work-in-progress visible across sessions</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Full-text search across titles, authors, abstracts, notes, highlights, and PDF body</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Needs-Metadata-Attention surfaces records that still need a human eye</p></div>
+        </div>
+      </div>
+      <div class="feature-image reveal reveal-d2">
+        <img class="screenshot screenshot--light screenshot--portrait" src="assets/app-captures/library-sidebar-light.png" alt="Papyrus Papers library sidebar in close-up — Smart Collections (Recent High-Impact, Conference Papers, Unread with PDF), reading queue, projects, and folders">
+        <img class="screenshot screenshot--dark screenshot--portrait" src="assets/app-captures/library-sidebar-dark.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Three ways to organize (real screenshots) ============ -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section-header reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="section-eyebrow">Three shapes for one library</span>
+      <h2 class="section-title" style="margin-top: 16px;">Smart Collections, Projects,<br><em>and Folders.</em></h2>
+      <p class="section-desc" style="margin: 18px auto 0; max-width: 680px;">Three different shapes for how research naturally clusters — saved queries that update themselves, working sets that span the library, and a hierarchy for the things that have a stable home. Use one. Use all three.</p>
+    </div>
+
+    <div class="organization-grid">
+      <div class="org-card reveal">
+        <div class="org-card__image">
+          <img class="screenshot screenshot--light" src="assets/app-captures/library-window-smart-light.png" alt="Papyrus Papers with the 'Recent High-Impact' Smart Collection selected — the paper list filters down to favorites from the last three years">
+          <img class="screenshot screenshot--dark" src="assets/app-captures/library-window-smart-dark.png" alt="" aria-hidden="true">
+        </div>
+        <div class="org-card__text">
+          <h3>Smart Collections</h3>
+          <p>Saved queries that always reflect the current state of the library. Build your own from any combination of tags, journals, year ranges, BibTeX type, favorites, and PDF status — the demo collections (<em>Recent High-Impact</em>, <em>Conference Papers</em>, <em>Unread with PDF</em>) are just examples.</p>
+        </div>
+      </div>
+
+      <div class="org-card reveal reveal-d1">
+        <div class="org-card__image">
+          <img class="screenshot screenshot--light" src="assets/app-captures/library-window-project-light.png" alt="Papyrus Papers with the 'Lit Review: Efficient Transformers' Project selected — papers grouped under one working set">
+          <img class="screenshot screenshot--dark" src="assets/app-captures/library-window-project-dark.png" alt="" aria-hidden="true">
+        </div>
+        <div class="org-card__text">
+          <h3>Projects</h3>
+          <p>Working sets for the writing or shipping you're doing right now — a literature review, a thesis chapter, a design submission. A paper can sit in many projects without being moved or duplicated.</p>
+        </div>
+      </div>
+
+      <div class="org-card reveal reveal-d2">
+        <div class="org-card__image">
+          <img class="screenshot screenshot--light" src="assets/app-captures/library-window-folder-light.png" alt="Papyrus Papers with the 'Background Reading' Folder selected — classic hierarchical organization in the paper list">
+          <img class="screenshot screenshot--dark" src="assets/app-captures/library-window-folder-dark.png" alt="" aria-hidden="true">
+        </div>
+        <div class="org-card__text">
+          <h3>Folders</h3>
+          <p>Classic hierarchical organization for material that has a stable home — datasheets, standards, archived background reading. Folder structure mirrors how Finder thinks, and travels into project bundle exports.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <!-- Feature 4 -->
+    <div class="feature-row feature-row--rev reveal">
+      <div class="feature-content">
+        <span class="section-eyebrow">Export</span>
+        <h2 class="section-title">Out the way<br><em>you came in.</em></h2>
+        <p class="section-desc">Everything you read and organized flows into the formats your writing tools expect. Citations, notes, and project bundles are one command away.</p>
+        <div class="feature-bullets">
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Copy citation in 8 styles — APA, MLA, Chicago, IEEE, Harvard, Vancouver, BibTeX, RIS</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>BibTeX and RIS export</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Markdown snapshot per paper or project</p></div>
+          <div class="feature-bullet"><span class="feature-bullet__dot"></span><p>Full project export bundles</p></div>
+        </div>
+      </div>
+      <div class="feature-image reveal reveal-d2">
+        <img src="assets/illustrations/export.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Workflow ============ -->
+<section id="workflow" class="section section--cream">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">A real workflow</span>
+      <h2 class="section-title">Import, read, decide<br><em>— one loop, one app.</em></h2>
+    </div>
+    <div class="workflow-steps">
+      <div class="workflow-step reveal"><div class="workflow-step__num">Step 01</div><h3>Import</h3><p>Drop PDFs, paste a DOI or arXiv ID, drag a folder, or paste BibTeX/RIS.</p></div>
+      <div class="workflow-step reveal reveal-d1"><div class="workflow-step__num">Step 02</div><h3>Read</h3><p>Open in the native reader; highlight, underline, draw, comment.</p></div>
+      <div class="workflow-step reveal reveal-d2"><div class="workflow-step__num">Step 03</div><h3>Note</h3><p>Write Markdown next to the page with math, code, and image embeds.</p></div>
+      <div class="workflow-step reveal"><div class="workflow-step__num">Step 04</div><h3>Organize</h3><p>Tags, folders, projects, smart collections, and a reading queue.</p></div>
+      <div class="workflow-step reveal reveal-d1"><div class="workflow-step__num">Step 05</div><h3>Search</h3><p>Full-text across titles, authors, abstracts, notes, highlights, and PDF body.</p></div>
+      <div class="workflow-step reveal reveal-d2"><div class="workflow-step__num">Step 06</div><h3>Export</h3><p>Citation, BibTeX/RIS, Markdown, or full project bundle — one command.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Audience ============ -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Who it's for</span>
+      <h2 class="section-title">For anyone who reads<br><em>for a living.</em></h2>
+    </div>
+    <div class="audience-grid">
+      <div class="audience-card reveal"><h4>Academic research</h4><p>Literature reading, lit review, proposals, and paper writing.</p></div>
+      <div class="audience-card reveal reveal-d1"><h4>Engineering R&amp;D</h4><p>Datasheets, manuals, reference designs, standards, and design reviews.</p></div>
+      <div class="audience-card reveal reveal-d2"><h4>Cross-disciplinary</h4><p>Papers, technical reports, lab material, and notes side by side.</p></div>
+      <div class="audience-card reveal reveal-d3"><h4>Independent scholars</h4><p>Anyone who reads a lot but doesn't want their workflow tied to a web product.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Spec strip ============ -->
+<section class="section section--ink">
+  <div class="container">
+    <div class="spec-strip">
+      <div class="spec-item reveal"><div class="spec-num">100<em>%</em></div><div class="spec-label">Local-first.<br>Your library lives on your Mac.</div></div>
+      <div class="spec-item reveal reveal-d1"><div class="spec-num">0</div><div class="spec-label">Analytics, telemetry,<br>or third-party SDKs.</div></div>
+      <div class="spec-item reveal reveal-d2"><div class="spec-num">15.6<em>+</em></div><div class="spec-label">macOS Sequoia or later.<br>Apple Silicon and Intel.</div></div>
+      <div class="spec-item reveal reveal-d3"><div class="spec-num">7</div><div class="spec-label">Rolling local backups.<br>Auto and manual snapshots.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Available on the Mac App Store</span>
+      <h2 class="section-title">Bring your reading<br><em>back together.</em></h2>
+      <p class="section-desc">A one-time purchase. No account. No subscription. Your library stays yours.</p>
+    </div>
+    <div class="cta-actions reveal reveal-d1">
+      <a href="download.html" class="app-store-badge" aria-label="Download Papyrus Papers on the Mac App Store">
+        <img class="app-store-badge__img app-store-badge__img--light" src="assets/app-store-badge-black.svg" alt="">
+        <img class="app-store-badge__img app-store-badge__img--dark" src="assets/app-store-badge-white.svg" alt="" aria-hidden="true">
+      </a>
+      <a href="https://github.com/zendax673/papyrus-release" class="btn btn--outline" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand"><img src="assets/icon.svg" alt="">Papyrus Papers</div>
+        <p class="footer__tagline">A native macOS workspace for researchers, engineers, and anyone who reads to think.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="https://github.com/zendax673/papyrus-release/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Support &amp; FAQ</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="mailto:zdfu189@gmail.com">Contact</a></li>
+            <li><a href="https://github.com/zendax673/papyrus-release/issues" target="_blank" rel="noopener">Report an issue</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://github.com/zendax673/papyrus-release" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://github.com/zendax673/papyrus-release/blob/main/FAQ.md" target="_blank" rel="noopener">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Papyrus Papers. Released under the MIT License.</p>
+      <p class="footer__req">Requires macOS 15.6 Sequoia or later.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Tweaks ============ -->
+<div class="tweaks-panel" id="tweaksPanel">
+  <div class="tweaks-panel__title"><span>Tweaks</span><button class="tweaks-panel__close" id="tweaksClose" aria-label="Close">×</button></div>
+  <div class="tweaks-row">
+    <span class="tweaks-row__label">Theme</span>
+    <div class="tweaks-seg" id="themeSeg">
+      <button data-theme="light">Light</button>
+      <button data-theme="dark">Dark</button>
+      <button data-theme="system">System</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // Theme
+  var root = document.documentElement;
+  function applyTheme(t){
+    if (t === 'system') {
+      root.removeAttribute('data-theme');
+      localStorage.removeItem('pp-theme');
+      var prefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', prefers);
+      localStorage.setItem('pp-theme-mode', 'system');
+    } else {
+      root.setAttribute('data-theme', t);
+      localStorage.setItem('pp-theme', t);
+      localStorage.setItem('pp-theme-mode', t);
+    }
+    syncThemeUI();
+  }
+  function syncThemeUI(){
+    var mode = localStorage.getItem('pp-theme-mode') || (root.getAttribute('data-theme') || 'light');
+    document.querySelectorAll('#themeSeg button').forEach(function(b){
+      b.classList.toggle('is-active', b.dataset.theme === mode);
+    });
+  }
+  document.getElementById('themeToggle').addEventListener('click', function(){
+    // Resolve the theme that's actually rendering right now. If the user
+    // hasn't picked one yet, data-theme is null and CSS is following the
+    // OS via prefers-color-scheme — we have to read that media query,
+    // otherwise the first click on a dark-OS device reads `null !==
+    // 'dark'`, sets dark again, and the user has to click twice to flip
+    // to light. Once we know the effective theme, flip it.
+    var explicit = root.getAttribute('data-theme');
+    var effective = explicit
+      || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(effective === 'dark' ? 'light' : 'dark');
+  });
+  var seg = document.getElementById('themeSeg');
+  if (seg) seg.addEventListener('click', function(e){
+    var b = e.target.closest('button[data-theme]'); if (!b) return;
+    applyTheme(b.dataset.theme);
+  });
+  syncThemeUI();
+
+  // Reveal
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-visible'); });
+  }
+
+  // Screenshot lightbox: each .screenshot lives in a .hero__shot /
+  // .feature-image / .org-card__image container. We inject a small zoom
+  // trigger (top-right) that opens the currently-visible variant in a
+  // full-screen modal. Click outside, the close button, or Escape to dismiss.
+  var lightbox = document.createElement('div');
+  lightbox.className = 'screenshot-lightbox';
+  lightbox.setAttribute('aria-hidden', 'true');
+  lightbox.innerHTML =
+    '<button class="screenshot-lightbox__close" aria-label="Close enlarged screenshot">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>' +
+    '</button>' +
+    '<figure class="screenshot-lightbox__figure">' +
+      '<img alt="">' +
+      '<figcaption class="screenshot-lightbox__caption" hidden></figcaption>' +
+    '</figure>';
+  document.body.appendChild(lightbox);
+
+  var lbImg = lightbox.querySelector('img');
+  var lbCaption = lightbox.querySelector('.screenshot-lightbox__caption');
+  var lbClose = lightbox.querySelector('.screenshot-lightbox__close');
+  var lastTrigger = null;
+
+  function openLightbox(src, alt, trigger){
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    if (alt && alt.trim()) {
+      lbCaption.textContent = alt;
+      lbCaption.hidden = false;
+    } else {
+      lbCaption.hidden = true;
+    }
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    lastTrigger = trigger;
+    setTimeout(function(){ lbClose.focus(); }, 50);
+  }
+  function closeLightbox(){
+    if (!lightbox.classList.contains('is-open')) return;
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastTrigger) lastTrigger.focus();
+  }
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e){
+    if (e.target === lightbox || e.target.classList.contains('screenshot-lightbox__figure')) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  var zoomSVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/>' +
+    '</svg>';
+
+  document.querySelectorAll('.hero__shot, .feature-image, .org-card__image').forEach(function(host){
+    if (!host.querySelector('.screenshot')) return;
+    host.classList.add('screenshot-zoom-host');
+    var trigger = document.createElement('button');
+    trigger.type = 'button';
+    trigger.className = 'screenshot-zoom-trigger';
+    trigger.setAttribute('aria-label', 'Enlarge screenshot');
+    trigger.innerHTML = zoomSVG;
+    host.appendChild(trigger);
+
+    trigger.addEventListener('click', function(){
+      // Prefer the currently visible variant (light or dark via the theme
+      // CSS rules). Fall back to the first .screenshot if neither is laid
+      // out (shouldn't happen, but safe).
+      var visible = Array.prototype.find.call(
+        host.querySelectorAll('.screenshot'),
+        function(img){ return img.offsetParent !== null; }
+      ) || host.querySelector('.screenshot');
+      if (visible) openLightbox(visible.currentSrc || visible.src, visible.alt, trigger);
+    });
+  });
+
+  // Tweaks edit-mode protocol
+  var panel = document.getElementById('tweaksPanel');
+  window.addEventListener('message', function(e){
+    if (!e.data || !e.data.type) return;
+    if (e.data.type === '__activate_edit_mode')   panel.classList.add('is-open');
+    if (e.data.type === '__deactivate_edit_mode') panel.classList.remove('is-open');
+  });
+  document.getElementById('tweaksClose').addEventListener('click', function(){
+    panel.classList.remove('is-open');
+    window.parent.postMessage({type:'__edit_mode_dismissed'}, '*');
+  });
+  window.parent.postMessage({type:'__edit_mode_available'}, '*');
+  // __papyrusMobileNavInit
+
+  // Mobile nav hamburger: clone .hide-mobile links into the panel and toggle
+  (function(){
+    var nav = document.querySelector('.nav');
+    var btn = document.getElementById('navHamburger');
+    var panel = document.getElementById('navMobilePanel');
+    if (!nav || !btn || !panel) return;
+    // Populate panel from existing nav__links .hide-mobile items so links
+    // stay in one place (no duplicate hardcoding per page).
+    document.querySelectorAll('.nav__links .hide-mobile a').forEach(function(a){
+      panel.appendChild(a.cloneNode(true));
+    });
+    function close(){
+      nav.classList.remove('is-menu-open');
+      panel.hidden = true;
+      btn.setAttribute('aria-expanded','false');
+    }
+    btn.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-menu-open');
+      panel.hidden = !open;
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    panel.addEventListener('click', function(e){ if (e.target.tagName === 'A') close(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+    // Close if viewport grows past mobile breakpoint while menu is open.
+    window.matchMedia('(min-width: 721px)').addEventListener('change', function(e){
+      if (e.matches) close();
+    });
+  })();
+
+})();
+</script>
+
+</body>
+</html>

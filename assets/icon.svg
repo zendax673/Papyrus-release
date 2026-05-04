@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    
+    <linearGradient id="bg" x1="0.05" y1="0" x2="0.95" y2="1">
+      <stop offset="0%" stop-color="#FDF9F3"></stop>
+      <stop offset="35%" stop-color="#F5F2EE"></stop>
+      <stop offset="70%" stop-color="#EDF3F8"></stop>
+      <stop offset="100%" stop-color="#E4EEF6"></stop>
+    </linearGradient>
+
+    
+    <radialGradient id="disc" cx="0.48" cy="0.47" r="0.30">
+      <stop offset="0%" stop-color="#D0E6F8" stop-opacity="0.50"></stop>
+      <stop offset="55%" stop-color="#DEEEFF" stop-opacity="0.22"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+    </radialGradient>
+
+    
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#8BA0B8" stroke-width="0.18" stroke-opacity="0.055"></path>
+    </pattern>
+
+    
+
+    
+    <linearGradient id="card1Fill" x1="0.1" y1="0.1" x2="0.9" y2="0.9">
+      <stop offset="0%" stop-color="#0040A0" stop-opacity="0.52"></stop>
+      <stop offset="40%" stop-color="#0055CC" stop-opacity="0.40"></stop>
+      <stop offset="100%" stop-color="#2266DD" stop-opacity="0.34"></stop>
+    </linearGradient>
+    <linearGradient id="card1Refract" x1="0.2" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#88BBFF" stop-opacity="0.22"></stop>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.10"></stop>
+      <stop offset="65%" stop-color="#6699FF" stop-opacity="0.16"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"></stop>
+    </linearGradient>
+
+    
+    <linearGradient id="card2Fill" x1="0.1" y1="0.05" x2="0.9" y2="0.95">
+      <stop offset="0%" stop-color="#0055CC" stop-opacity="0.55"></stop>
+      <stop offset="35%" stop-color="#0066EE" stop-opacity="0.45"></stop>
+      <stop offset="70%" stop-color="#1177FF" stop-opacity="0.38"></stop>
+      <stop offset="100%" stop-color="#2288FF" stop-opacity="0.32"></stop>
+    </linearGradient>
+    <linearGradient id="card2Refract" x1="0.15" y1="0" x2="0.75" y2="1">
+      <stop offset="0%" stop-color="#AADDFF" stop-opacity="0.25"></stop>
+      <stop offset="25%" stop-color="#FFFFFF" stop-opacity="0.12"></stop>
+      <stop offset="50%" stop-color="#88CCFF" stop-opacity="0.20"></stop>
+      <stop offset="75%" stop-color="#FFFFFF" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#66BBFF" stop-opacity="0.15"></stop>
+    </linearGradient>
+
+    
+    <linearGradient id="card3Fill" x1="0.1" y1="0.1" x2="0.9" y2="0.9">
+      <stop offset="0%" stop-color="#008855" stop-opacity="0.50"></stop>
+      <stop offset="40%" stop-color="#00AA66" stop-opacity="0.42"></stop>
+      <stop offset="100%" stop-color="#22CC77" stop-opacity="0.36"></stop>
+    </linearGradient>
+    <linearGradient id="card3Refract" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#88FFCC" stop-opacity="0.22"></stop>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.10"></stop>
+      <stop offset="65%" stop-color="#66EEBB" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"></stop>
+    </linearGradient>
+
+    
+    <linearGradient id="glassOverlay" x1="0.1" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.40"></stop>
+      <stop offset="12%" stop-color="#FFFFFF" stop-opacity="0.18"></stop>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.06"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"></stop>
+    </linearGradient>
+
+    
+    <linearGradient id="silver" x1="0.1" y1="0.05" x2="0.9" y2="0.95">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.72"></stop>
+      <stop offset="25%" stop-color="#D0D8E0" stop-opacity="0.45"></stop>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.30"></stop>
+      <stop offset="75%" stop-color="#D0D8E0" stop-opacity="0.40"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.65"></stop>
+    </linearGradient>
+
+    
+    <linearGradient id="gold" x1="0.1" y1="0.1" x2="0.9" y2="0.9">
+      <stop offset="0%" stop-color="#D4A855" stop-opacity="0.30"></stop>
+      <stop offset="50%" stop-color="#C89030" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#E0B860" stop-opacity="0.28"></stop>
+    </linearGradient>
+
+    
+    <pattern id="data" width="72" height="54" patternUnits="userSpaceOnUse" patternTransform="rotate(-5)">
+      <text x="2" y="9" font-family="SF Mono, Menlo, monospace" font-size="5.5" fill="#003388" opacity="0.07">∇²ψ = −ℏ²/2m</text>
+      <text x="38" y="9" font-family="SF Mono, Menlo, monospace" font-size="4.5" fill="#006644" opacity="0.055">doi:10.1038</text>
+      <text x="4" y="20" font-family="SF Mono, Menlo, monospace" font-size="4.5" fill="#0055AA" opacity="0.06">@article{vaswani}</text>
+      <text x="40" y="20" font-family="SF Mono, Menlo, monospace" font-size="5.5" fill="#004488" opacity="0.04">∂E/∂t</text>
+      <text x="1" y="31" font-family="SF Mono, Menlo, monospace" font-size="4.5" fill="#008855" opacity="0.05">H = Σ σᵢσⱼ</text>
+      <text x="36" y="31" font-family="SF Mono, Menlo, monospace" font-size="4.5" fill="#0066BB" opacity="0.06">BibTeX:2025</text>
+      <text x="6" y="42" font-family="SF Mono, Menlo, monospace" font-size="5.5" fill="#003388" opacity="0.04">∮ E·dl = 0</text>
+      <text x="42" y="42" font-family="SF Mono, Menlo, monospace" font-size="4.5" fill="#006644" opacity="0.05">arXiv:2401</text>
+      <text x="2" y="53" font-family="SF Mono, Menlo, monospace" font-size="4.5" fill="#0055AA" opacity="0.055">ISSN 0028-0836</text>
+      <text x="44" y="53" font-family="SF Mono, Menlo, monospace" font-size="5.5" fill="#008855" opacity="0.04">∫ f(x)dx</text>
+    </pattern>
+
+    
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="g"></feGaussianBlur>
+      <feMerge><feMergeNode in="g"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+    </filter>
+
+    
+    <filter id="cardSh1" x="-15%" y="-10%" width="135%" height="135%">
+      <feDropShadow dx="-2" dy="4" stdDeviation="8" flood-color="#003388" flood-opacity="0.12"></feDropShadow>
+    </filter>
+    <filter id="cardSh2" x="-10%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#0055CC" flood-opacity="0.14"></feDropShadow>
+    </filter>
+    <filter id="cardSh3" x="-15%" y="-10%" width="135%" height="135%">
+      <feDropShadow dx="2" dy="4" stdDeviation="8" flood-color="#006644" flood-opacity="0.12"></feDropShadow>
+    </filter>
+
+    <filter id="iconSh" x="-8%" y="-8%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#8B7A5A" flood-opacity="0.15"></feDropShadow>
+    </filter>
+
+    <clipPath id="sq">
+      <rect x="102" y="94" width="820" height="820" rx="188"></rect>
+    </clipPath>
+
+    
+
+    
+    <rect id="c1" x="-200" y="-135" width="400" height="270" rx="18"></rect>
+
+    
+    <rect id="c2" x="-188" y="-128" width="375" height="255" rx="16"></rect>
+
+    
+    <rect id="c3" x="-200" y="-135" width="400" height="270" rx="18"></rect>
+  </defs>
+
+  
+  <rect x="102" y="94" width="820" height="820" rx="188" fill="#D0C8BC" filter="url(#iconSh)"></rect>
+  <rect x="102" y="94" width="820" height="820" rx="188" fill="url(#bg)"></rect>
+
+  <g clip-path="url(#sq)">
+    <rect x="102" y="94" width="820" height="820" fill="url(#grid)"></rect>
+    <rect x="102" y="94" width="820" height="820" fill="url(#disc)"></rect>
+
+    
+
+    
+    <g transform="translate(430, 490) rotate(-12)" filter="url(#cardSh1)">
+      <use href="#c1" fill="url(#card1Fill)"></use>
+      <use href="#c1" fill="url(#data)" opacity="0.7"></use>
+      <use href="#c1" fill="url(#card1Refract)"></use>
+      <use href="#c1" fill="url(#glassOverlay)"></use>
+      <use href="#c1" fill="none" stroke="url(#gold)" stroke-width="1.8"></use>
+      <use href="#c1" fill="none" stroke="url(#silver)" stroke-width="1"></use>
+      
+      <line x1="-172" y1="-82" x2="52" y2="-82" stroke="#FFFFFF" stroke-width="0.7" opacity="0.18"></line>
+      
+      <g opacity="0.12" stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="round">
+        <line x1="-160" y1="-58" x2="105" y2="-58"></line>
+        <line x1="-160" y1="-36" x2="78" y2="-36"></line>
+        <line x1="-160" y1="-14" x2="120" y2="-14"></line>
+        <line x1="-160" y1="8" x2="65" y2="8"></line>
+        <line x1="-160" y1="30" x2="95" y2="30"></line>
+      </g>
+    </g>
+
+    
+    <g transform="translate(512, 504) rotate(0)" filter="url(#cardSh2)">
+      <use href="#c2" fill="url(#card2Fill)"></use>
+      <use href="#c2" fill="url(#data)" opacity="0.8"></use>
+      <use href="#c2" fill="url(#card2Refract)"></use>
+      <use href="#c2" fill="url(#glassOverlay)"></use>
+      <use href="#c2" fill="none" stroke="url(#gold)" stroke-width="1.8"></use>
+      <use href="#c2" fill="none" stroke="url(#silver)" stroke-width="1"></use>
+      
+      <line x1="-160" y1="-78" x2="40" y2="-78" stroke="#FFFFFF" stroke-width="0.8" opacity="0.22"></line>
+      
+      <g opacity="0.14" stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="round">
+        <line x1="-148" y1="-54" x2="120" y2="-54"></line>
+        <line x1="-148" y1="-32" x2="94" y2="-32"></line>
+        <line x1="-148" y1="-10" x2="134" y2="-10"></line>
+        <line x1="-148" y1="12" x2="74" y2="12"></line>
+        <line x1="-148" y1="34" x2="108" y2="34"></line>
+        <line x1="-148" y1="56" x2="88" y2="56"></line>
+      </g>
+    </g>
+
+    
+    <g transform="translate(590, 518) rotate(10)" filter="url(#cardSh3)">
+      <use href="#c3" fill="url(#card3Fill)"></use>
+      <use href="#c3" fill="url(#data)" opacity="0.7"></use>
+      <use href="#c3" fill="url(#card3Refract)"></use>
+      <use href="#c3" fill="url(#glassOverlay)"></use>
+      <use href="#c3" fill="none" stroke="url(#gold)" stroke-width="1.8"></use>
+      <use href="#c3" fill="none" stroke="url(#silver)" stroke-width="1"></use>
+      
+      <line x1="-172" y1="-82" x2="52" y2="-82" stroke="#FFFFFF" stroke-width="0.7" opacity="0.18"></line>
+      
+      <g opacity="0.12" stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="round">
+        <line x1="-160" y1="-58" x2="105" y2="-58"></line>
+        <line x1="-160" y1="-36" x2="78" y2="-36"></line>
+        <line x1="-160" y1="-14" x2="120" y2="-14"></line>
+        <line x1="-160" y1="8" x2="65" y2="8"></line>
+        <line x1="-160" y1="30" x2="95" y2="30"></line>
+      </g>
+    </g>
+
+
+  </g>
+
+  
+  <rect x="102" y="94" width="820" height="820" rx="188" fill="none" stroke="#C8BCA8" stroke-opacity="0.22" stroke-width="1"></rect>
+</svg>

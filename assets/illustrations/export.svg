@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Export formats illustration">
+  <defs>
+    <linearGradient id="ebg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3ecdf"></stop>
+      <stop offset="1" stop-color="#ece2cf"></stop>
+    </linearGradient>
+    <linearGradient id="ecard" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"></stop>
+      <stop offset="1" stop-color="#faf6ef"></stop>
+    </linearGradient>
+    <filter id="esh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1a1814" flood-opacity="0.10"></feDropShadow>
+    </filter>
+  </defs>
+  <rect width="720" height="520" rx="28" fill="url(#ebg)"></rect>
+
+  
+  <g>
+    <rect x="42" y="160" width="220" height="200" rx="14" fill="#1a1814"></rect>
+    <rect x="42" y="160" width="220" height="36" rx="14" fill="#1a1814"></rect>
+    <rect x="42" y="184" width="220" height="12" fill="#1a1814"></rect>
+    <circle cx="60" cy="178" r="4" fill="#c8922a"></circle>
+    <text x="74" y="183" font-family="-apple-system,Helvetica" font-size="12" font-weight="600" fill="#f7eccb">Project · Thesis ch. 3</text>
+
+    <text x="62" y="222" font-family="-apple-system,Helvetica" font-size="10" letter-spacing="1.2" fill="#8c8576">SOURCES</text>
+    <text x="62" y="244" font-family="Georgia,serif" font-size="14" fill="#f3eedc">42 papers</text>
+    <text x="62" y="262" font-family="Georgia,serif" font-size="14" fill="#f3eedc">186 highlights</text>
+    <text x="62" y="280" font-family="Georgia,serif" font-size="14" fill="#f3eedc">28 markdown notes</text>
+    <text x="62" y="298" font-family="Georgia,serif" font-size="14" fill="#f3eedc">6 figures</text>
+
+    <line x1="62" y1="316" x2="242" y2="316" stroke="#3a342a"></line>
+    <text x="62" y="338" font-family="-apple-system,Helvetica" font-size="11" fill="#a39d8c">Local · ~/Papyrus/Projects</text>
+  </g>
+
+  
+  <g stroke="#c8922a" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M262 200 C 340 200, 380 130, 460 130"></path>
+    <path d="M262 240 C 340 240, 380 220, 460 220"></path>
+    <path d="M262 280 C 340 280, 380 310, 460 310"></path>
+    <path d="M262 320 C 340 320, 380 400, 460 400"></path>
+  </g>
+  <g fill="#c8922a">
+    <circle cx="460" cy="130" r="3"></circle>
+    <circle cx="460" cy="220" r="3"></circle>
+    <circle cx="460" cy="310" r="3"></circle>
+    <circle cx="460" cy="400" r="3"></circle>
+  </g>
+
+  
+  <g>
+    <rect x="464" y="100" width="220" height="60" rx="10" fill="url(#ecard)" stroke="#e3dccb"></rect>
+    <rect x="480" y="116" width="36" height="28" rx="6" fill="#fff4d9"></rect>
+    <text x="498" y="135" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" font-weight="700" fill="#a87715">.bib</text>
+    <text x="528" y="128" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">BibTeX</text>
+    <text x="528" y="146" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">42 entries · UTF-8</text>
+  </g>
+
+  <g>
+    <rect x="464" y="190" width="220" height="60" rx="10" fill="url(#ecard)" stroke="#e3dccb"></rect>
+    <rect x="480" y="206" width="36" height="28" rx="6" fill="#e2ecfd"></rect>
+    <text x="498" y="225" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" font-weight="700" fill="#2860c2">.ris</text>
+    <text x="528" y="218" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">RIS</text>
+    <text x="528" y="236" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">EndNote, Mendeley ready</text>
+  </g>
+
+  <g>
+    <rect x="464" y="280" width="220" height="60" rx="10" fill="url(#ecard)" stroke="#e3dccb"></rect>
+    <rect x="480" y="296" width="36" height="28" rx="6" fill="#dff4e1"></rect>
+    <text x="498" y="315" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" font-weight="700" fill="#2da64f">.md</text>
+    <text x="528" y="308" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">Markdown snapshot</text>
+    <text x="528" y="326" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">notes + highlights + cites</text>
+  </g>
+
+  <g>
+    <rect x="464" y="370" width="220" height="60" rx="10" fill="url(#ecard)" stroke="#e3dccb"></rect>
+    <rect x="480" y="386" width="36" height="28" rx="6" fill="#e9e2fc"></rect>
+    <text x="498" y="405" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" font-weight="700" fill="#7b61d1">.zip</text>
+    <text x="528" y="398" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">Project bundle</text>
+    <text x="528" y="416" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">PDFs + db + assets</text>
+  </g>
+
+  
+  <g>
+    <rect x="296" y="44" width="124" height="28" rx="14" fill="#1a1814"></rect>
+    <text x="358" y="63" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="11" font-weight="500" fill="#f7eccb">One command →</text>
+  </g>
+</svg>

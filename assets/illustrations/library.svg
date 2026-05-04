@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Library and smart collections illustration">
+  <defs>
+    <linearGradient id="lbg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3ecdf"></stop>
+      <stop offset="1" stop-color="#ece2cf"></stop>
+    </linearGradient>
+    <linearGradient id="lcard" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"></stop>
+      <stop offset="1" stop-color="#faf6ef"></stop>
+    </linearGradient>
+    <filter id="lsh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1a1814" flood-opacity="0.10"></feDropShadow>
+    </filter>
+  </defs>
+  <rect width="720" height="520" rx="28" fill="url(#lbg)"></rect>
+
+  
+  <g>
+    <rect x="42" y="56" width="240" height="408" rx="14" fill="url(#lcard)" stroke="#e3dccb"></rect>
+    <text x="62" y="84" font-family="-apple-system,Helvetica" font-size="10" letter-spacing="1.4" font-weight="600" fill="#8c8576">SMART COLLECTIONS</text>
+
+    
+    <g>
+      <rect x="56" y="100" width="212" height="36" rx="8" fill="#f7eccb"></rect>
+      <circle cx="74" cy="118" r="5" fill="#c8922a"></circle>
+      <text x="88" y="115" font-family="-apple-system,Helvetica" font-size="13" font-weight="600" fill="#1a1814">Recent High-Impact</text>
+      <text x="88" y="130" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">12 papers · last 30d</text>
+    </g>
+
+    <g>
+      <rect x="56" y="144" width="212" height="36" rx="8" fill="transparent"></rect>
+      <circle cx="74" cy="162" r="5" fill="#1e9eb3"></circle>
+      <text x="88" y="159" font-family="-apple-system,Helvetica" font-size="13" font-weight="500" fill="#1a1814">Conference Papers</text>
+      <text x="88" y="174" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">86 · NeurIPS, ICML, …</text>
+    </g>
+
+    <g>
+      <rect x="56" y="188" width="212" height="36" rx="8" fill="transparent"></rect>
+      <circle cx="74" cy="206" r="5" fill="#e8861f"></circle>
+      <text x="88" y="203" font-family="-apple-system,Helvetica" font-size="13" font-weight="500" fill="#1a1814">Unread with PDF</text>
+      <text x="88" y="218" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">38 · attached files</text>
+    </g>
+
+    <g>
+      <rect x="56" y="232" width="212" height="36" rx="8" fill="transparent"></rect>
+      <circle cx="74" cy="250" r="5" fill="#d9457e"></circle>
+      <text x="88" y="247" font-family="-apple-system,Helvetica" font-size="13" font-weight="500" fill="#1a1814">Needs metadata</text>
+      <text x="88" y="262" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">7 · review</text>
+    </g>
+
+    <g>
+      <rect x="56" y="276" width="212" height="36" rx="8" fill="transparent"></rect>
+      <circle cx="74" cy="294" r="5" fill="#7b61d1"></circle>
+      <text x="88" y="291" font-family="-apple-system,Helvetica" font-size="13" font-weight="500" fill="#1a1814">Reading queue</text>
+      <text x="88" y="306" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">9 in progress</text>
+    </g>
+
+    <line x1="56" y1="332" x2="268" y2="332" stroke="#efe9da"></line>
+    <text x="62" y="356" font-family="-apple-system,Helvetica" font-size="10" letter-spacing="1.4" font-weight="600" fill="#8c8576">SEARCH</text>
+    <rect x="56" y="368" width="212" height="36" rx="8" fill="#faf6ef" stroke="#e3dccb"></rect>
+    <circle cx="72" cy="386" r="5" fill="none" stroke="#8c8576" stroke-width="1.5"></circle>
+    <line x1="76" y1="390" x2="80" y2="394" stroke="#8c8576" stroke-width="1.5" stroke-linecap="round"></line>
+    <text x="92" y="390" font-family="-apple-system,Helvetica" font-size="13" fill="#8c8576">attention mechanism</text>
+    <rect x="56" y="416" width="212" height="22" rx="6" fill="#fff4d9"></rect>
+    <text x="68" y="431" font-family="-apple-system,Helvetica" font-size="11" fill="#a87715">142 hits · titles, notes, PDF body</text>
+  </g>
+
+  
+  <g>
+    <rect x="320" y="120" width="320" height="80" rx="12" fill="url(#lcard)" stroke="#e3dccb"></rect>
+    <rect x="320" y="120" width="6" height="80" fill="#c8922a"></rect>
+    <text x="340" y="148" font-family="Georgia,serif" font-size="15" font-weight="600" fill="#1a1814">Attention Is All You Need</text>
+    <text x="340" y="166" font-family="-apple-system,Helvetica" font-size="11.5" fill="#6b6557">Vaswani et al. · NeurIPS 2017 · queue position 1</text>
+    <rect x="340" y="176" width="64" height="16" rx="4" fill="#f7eccb"></rect>
+    <text x="372" y="187" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" fill="#a87715">cited 92k</text>
+    <rect x="410" y="176" width="80" height="16" rx="4" fill="#e9e2fc"></rect>
+    <text x="450" y="187" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" fill="#7b61d1">transformers</text>
+  </g>
+
+  <g>
+    <rect x="320" y="208" width="320" height="80" rx="12" fill="url(#lcard)" stroke="#e3dccb"></rect>
+    <rect x="320" y="208" width="6" height="80" fill="#1e9eb3"></rect>
+    <text x="340" y="236" font-family="Georgia,serif" font-size="15" font-weight="600" fill="#1a1814">A Mathematical Theory of Communication</text>
+    <text x="340" y="254" font-family="-apple-system,Helvetica" font-size="11.5" fill="#6b6557">Shannon · Bell System Tech. Journal · 1948</text>
+    <rect x="340" y="264" width="74" height="16" rx="4" fill="#dff4e1"></rect>
+    <text x="377" y="275" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" fill="#2da64f">foundational</text>
+  </g>
+
+  <g>
+    <rect x="320" y="296" width="320" height="80" rx="12" fill="url(#lcard)" stroke="#e3dccb"></rect>
+    <rect x="320" y="296" width="6" height="80" fill="#e8861f"></rect>
+    <text x="340" y="324" font-family="Georgia,serif" font-size="15" font-weight="600" fill="#1a1814">SiGe BiCMOS for mm-Wave Front Ends</text>
+    <text x="340" y="342" font-family="-apple-system,Helvetica" font-size="11.5" fill="#6b6557">Rebeiz et al. · IEEE JSSC · 2024</text>
+    <rect x="340" y="352" width="64" height="16" rx="4" fill="#fff4d9"></rect>
+    <text x="372" y="363" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" fill="#a87715">datasheet</text>
+    <rect x="410" y="352" width="36" height="16" rx="4" fill="#f3ecdf"></rect>
+    <text x="428" y="363" text-anchor="middle" font-family="-apple-system,Helvetica" font-size="9.5" fill="#6b6557">5G</text>
+  </g>
+
+  <g>
+    <rect x="320" y="384" width="320" height="60" rx="12" fill="url(#lcard)" stroke="#e3dccb"></rect>
+    <rect x="320" y="384" width="6" height="60" fill="#7b61d1"></rect>
+    <text x="340" y="408" font-family="Georgia,serif" font-size="14" font-weight="500" fill="#1a1814">IEEE 802.11be — Extremely High Throughput</text>
+    <text x="340" y="426" font-family="-apple-system,Helvetica" font-size="11" fill="#6b6557">IEEE Standards Association · 2024</text>
+  </g>
+
+  
+  <g>
+    <rect x="320" y="56" width="158" height="28" rx="14" fill="#1a1814"></rect>
+    <circle cx="336" cy="70" r="3" fill="#c8922a"></circle>
+    <text x="348" y="75" font-family="-apple-system,Helvetica" font-size="11" font-weight="500" fill="#f7eccb">Working set · 4 of 612</text>
+  </g>
+</svg>

@@ -1,0 +1,206 @@
+/* ============================================================
+   Papyrus Design System — Tokens
+   Derived from zendax673/Papyrus-release/docs/assets/styles.css
+   + in-app SwiftUI color/spacing conventions.
+   ============================================================ */
+
+:root {
+  /* ---------- Color: neutral scale (Apple-system aligned) ---------- */
+  --pp-bg:              #ffffff;
+  --pp-bg-alt:          #f5f5f7;
+  --pp-bg-card:         #fbfbfd;
+  --pp-bg-sidebar:      #f2f1ec;   /* warm sidebar tint (macOS vibrancy approx) */
+  --pp-fg1:             #1d1d1f;   /* primary text */
+  --pp-fg2:             #6e6e73;   /* secondary text */
+  --pp-fg3:             #86868b;   /* tertiary text, captions */
+  --pp-fg4:             #a1a1a6;   /* disabled / placeholder */
+  --pp-border:          #d2d2d7;   /* standard hairline */
+  --pp-border-light:    #e8e8ed;   /* subtle hairline */
+  --pp-divider:         #ececf0;
+
+  /* ---------- Color: brand accents ---------- */
+  --pp-papyrus-warm:    #c8922a;   /* primary brand accent */
+  --pp-papyrus-gold:    #d4a23a;   /* hover / gradient partner */
+  --pp-papyrus-dark:    #9a6f12;   /* text-on-cream */
+  --pp-papyrus-cream:   #faf6ef;   /* soft CTA bg */
+  --pp-papyrus-beta-bg: #fef7ec;   /* beta badge bg gradient start */
+  --pp-papyrus-beta-bd: #e8c97a;   /* beta badge border */
+
+  /* ---------- Color: system accents ---------- */
+  --pp-accent:          #0071e3;   /* macOS system blue */
+  --pp-accent-hover:    #0077ed;
+  --pp-accent-press:    #005bbf;
+
+  /* ---------- Color: semantic status ---------- */
+  --pp-success:         #2da44e;   /* license badge green */
+  --pp-warning:         #c8922a;   /* reuses papyrus warm */
+  --pp-danger:          #d1453b;
+  --pp-info:            #0071e3;
+
+  /* ---------- Color: tag chips (in-app) ---------- */
+  --pp-tag-blue:        #0071e3;
+  --pp-tag-teal:        #1e9eb3;
+  --pp-tag-green:       #2da44e;
+  --pp-tag-orange:      #e8861f;
+  --pp-tag-pink:        #d9457e;
+  --pp-tag-purple:      #7b61d1;
+  --pp-tag-grey:        #8a8a90;
+  --pp-tag-gold:        #c8922a;
+
+  /* ---------- Typography ---------- */
+  --pp-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --pp-font-serif: "Iowan Old Style", "Source Serif 4", Baskerville, Georgia,
+                   "Times New Roman", serif;
+  --pp-font-mono: "SF Mono", ui-monospace, Menlo, Monaco, Consolas,
+                  "Liberation Mono", monospace;
+
+  /* ---------- Type scale ---------- */
+  --pp-fs-display:      clamp(2.75rem, 5.5vw, 4rem);   /* hero H1: 44–64px */
+  --pp-fs-h1:           3.25rem;    /* 52px */
+  --pp-fs-h2:           2.125rem;   /* 34px */
+  --pp-fs-h3:           1.375rem;   /* 22px */
+  --pp-fs-h4:           1.125rem;   /* 18px */
+  --pp-fs-lead:         1.3125rem;  /* 21px — hero tagline */
+  --pp-fs-body:         1rem;       /* 16px */
+  --pp-fs-body-sm:      0.9375rem;  /* 15px */
+  --pp-fs-small:        0.875rem;   /* 14px */
+  --pp-fs-xs:           0.8125rem;  /* 13px — nav links, caption */
+  --pp-fs-xxs:          0.75rem;    /* 12px — badge, meta */
+
+  --pp-lh-display:      1.12;
+  --pp-lh-tight:        1.3;
+  --pp-lh-body:         1.6;
+  --pp-lh-loose:        1.7;
+
+  --pp-tracking-tight:  -0.025em;
+  --pp-tracking-normal: 0;
+  --pp-tracking-wide:   0.01em;
+
+  --pp-weight-regular:  400;
+  --pp-weight-medium:   500;
+  --pp-weight-semibold: 600;
+  --pp-weight-bold:     700;
+
+  /* ---------- Spacing scale ---------- */
+  --pp-space-0:   0;
+  --pp-space-1:   4px;
+  --pp-space-2:   8px;
+  --pp-space-3:   12px;
+  --pp-space-4:   16px;
+  --pp-space-5:   20px;
+  --pp-space-6:   24px;
+  --pp-space-7:   28px;
+  --pp-space-8:   32px;
+  --pp-space-10:  40px;
+  --pp-space-12:  48px;
+  --pp-space-14:  56px;
+  --pp-space-16:  64px;
+  --pp-space-20:  80px;
+  --pp-space-24:  96px;
+
+  /* ---------- Layout ---------- */
+  --pp-width-page:   1080px;
+  --pp-width-narrow: 760px;
+  --pp-width-text:   640px;
+  --pp-gutter:       24px;
+
+  /* ---------- Radii ---------- */
+  --pp-radius-sm:   8px;
+  --pp-radius-md:   12px;
+  --pp-radius-lg:   20px;
+  --pp-radius-pill: 980px;
+
+  /* ---------- Shadows ---------- */
+  --pp-shadow-card:   0 2px 12px rgba(0, 0, 0, 0.06);
+  --pp-shadow-float:  0 12px 40px rgba(0, 0, 0, 0.12);
+  --pp-shadow-modal:  0 20px 60px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0,0,0,.04);
+  --pp-shadow-glow:   0 0 60px rgba(200, 146, 42, 0.12);
+  --pp-shadow-btn-blue:    0 4px 16px rgba(0, 113, 227, 0.30);
+  --pp-shadow-btn-blue-hv: 0 6px 20px rgba(0, 113, 227, 0.35);
+  --pp-shadow-btn-warm:    0 4px 16px rgba(200, 146, 42, 0.30);
+  --pp-shadow-btn-warm-hv: 0 6px 20px rgba(200, 146, 42, 0.35);
+  --pp-focus-ring:  0 0 0 3px rgba(0, 113, 227, 0.35);
+
+  /* ---------- Motion ---------- */
+  --pp-ease:          cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --pp-dur-fast:      0.15s;
+  --pp-dur-base:      0.3s;
+  --pp-dur-slow:      0.5s;
+  --pp-dur-fade:      0.7s;
+  --pp-transition:    0.3s var(--pp-ease);
+
+  /* ---------- Blur / translucent surfaces ---------- */
+  --pp-blur-nav:  saturate(180%) blur(20px);
+  --pp-blur-md:   blur(12px);
+  --pp-blur-sm:   blur(8px);
+  --pp-surface-translucent: rgba(255, 255, 255, 0.82);
+  --pp-surface-card-glass:  rgba(255, 255, 255, 0.90);
+  --pp-surface-badge-glass: rgba(255, 255, 255, 0.80);
+
+  /* ---------- Gradients ---------- */
+  --pp-grad-text-dark: linear-gradient(135deg, #1d1d1f 0%, #3a3a3c 100%);
+  --pp-grad-warm:      linear-gradient(135deg, #c8922a 0%, #b57d1e 100%);
+  --pp-grad-warm-hv:   linear-gradient(135deg, #d4a23a 0%, #c8922a 100%);
+  --pp-grad-blue:      linear-gradient(135deg, #0071e3 0%, #005bbf 100%);
+  --pp-grad-beta:      linear-gradient(135deg, #fef7ec, #fdf0d8);
+  --pp-grad-cta:       linear-gradient(180deg, #ffffff 0%, #faf6ef 100%);
+  --pp-grad-divider:   linear-gradient(90deg, #c8922a, #d4a23a);
+  --pp-grad-hero-bg:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(200, 146, 42, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 70% 80%, rgba(0, 113, 227, 0.04) 0%, transparent 50%),
+    #ffffff;
+}
+
+/* ============================================================
+   Semantic defaults — apply by tagging the root
+   ============================================================ */
+
+body.pp {
+  font-family: var(--pp-font-sans);
+  font-size: var(--pp-fs-body);
+  line-height: var(--pp-lh-body);
+  color: var(--pp-fg1);
+  background: var(--pp-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pp h1, .pp h2, .pp h3, .pp h4 {
+  font-weight: var(--pp-weight-semibold);
+  line-height: var(--pp-lh-display);
+  letter-spacing: var(--pp-tracking-tight);
+  color: var(--pp-fg1);
+}
+.pp h1 { font-size: var(--pp-fs-h1); }
+.pp h2 { font-size: var(--pp-fs-h2); }
+.pp h3 { font-size: var(--pp-fs-h3); }
+.pp h4 { font-size: var(--pp-fs-h4); }
+
+.pp .display {
+  font-size: var(--pp-fs-display);
+  font-weight: var(--pp-weight-semibold);
+  line-height: var(--pp-lh-display);
+  letter-spacing: var(--pp-tracking-tight);
+  background: var(--pp-grad-text-dark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pp .lead   { font-size: var(--pp-fs-lead); color: var(--pp-fg2); line-height: 1.5; }
+.pp .body   { font-size: var(--pp-fs-body); color: var(--pp-fg1); }
+.pp .body-sm{ font-size: var(--pp-fs-body-sm); color: var(--pp-fg2); }
+.pp .caption{ font-size: var(--pp-fs-xs); color: var(--pp-fg3); }
+.pp .meta   { font-size: var(--pp-fs-xxs); color: var(--pp-fg3); }
+.pp code, .pp .mono {
+  font-family: var(--pp-font-mono);
+  font-size: 0.875em;
+  background: var(--pp-bg-alt);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+.pp .serif { font-family: var(--pp-font-serif); }
+
+.pp a { color: var(--pp-accent); text-decoration: none; transition: color var(--pp-transition); }
+.pp a:hover { color: var(--pp-accent-hover); text-decoration: underline; }
